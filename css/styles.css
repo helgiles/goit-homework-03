@@ -1,197 +1,337 @@
+:root {
+	--text-color: #434455;
+	--white-background-color: #ffffff;
+	--light-background-color: #f4f4fd;
+	--cornflower: #e7e9fc;
+	--primary-brand-color: #4d5ae5;
+	--dark-color: #2e2f42;
+	--pressed-state-color: #404bbf;
+}
+
 body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
-	color: #434455;
-	background-color: #ffffff;
+	color: var(--text-color);
+	background-color: var(--white-background-color);
+	width: 1440px;
+	height: 3300px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
 }
 
 ul {
 	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.container {
+	max-width: 1158px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* header */
 
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 24px auto;
+}
+
+.nav,
+.address {
+	display: flex;
+}
+
+.nav ul {
+	display: flex;
+	gap: 40px;
+}
+
 .header-logo {
-	color: #4d5ae5;
+	color: var(--primary-brand-color);
 	font-family: 'Raleway', sans-serif;
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 1.17;
-	letter-spacing: 0.54px;
+	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	text-decoration: none;
+	padding-right: 76px;
 }
 
 .accent-header {
-	color: #2e2f42;
+	color: var(--dark-color);
 }
 
 .header-link {
-	color: #2e2f42;
+	color: var(--dark-color);
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 1.5;
-	letter-spacing: 0.32px;
+	letter-spacing: 0.02em;
 	text-decoration: none;
 }
 .header-link:hover,
 .header-link:active,
 .header-link:focus {
-	color: #404bbf;
+	color: var(--pressed-state-color);
 }
 
 .address {
 	font-style: normal;
 }
 
+.address ul {
+	display: flex;
+	gap: 40px;
+}
+
 .contacts-link {
-	color: #434455;
+	color: var(--text-color);
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.5;
-	letter-spacing: 0.32px;
+	letter-spacing: 0.02em;
 	text-decoration: none;
 }
 .contacts-link:hover,
 .contacts-link:active,
 .contacts-link:focus {
-	color: #404bbf;
+	color: var(--pressed-state-color);
 }
 
 /* hero section */
 
 .hero-section {
-	background-color: #2e2f42;
+	background-color: var(--dark-color);
+	width: 1440px;
+	height: 600px;
+	flex-shrink: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 120px;
 }
 
 .hero-title {
-	color: #ffffff;
+	color: var(--white-background-color);
+	width: 496px;
+	height: 120px;
 	text-align: center;
 	font-size: 56px;
 	font-weight: 700;
 	line-height: 1.07;
-	letter-spacing: 1.12px;
+	letter-spacing: 0.02em;
 }
 
 .hero-button {
-	color: #ffffff;
+	color: var(--white-background-color);
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 1.5;
-	letter-spacing: 0.64px;
-	background: #4d5ae5;
+	letter-spacing: 0.04em;
+	background: var(--primary-brand-color);
 	cursor: pointer;
 	border: none;
 }
 .hero-button:hover,
 .hero-button:focus,
 .hero-button:active {
-	background: #404bbf;
+	background: var(--pressed-state-color);
 }
 
 /* benefits section */
 
+.benefits-section {
+	padding-bottom: 120px;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.benefits-list {
+	display: flex;
+	gap: 24px;
+}
+
 .benefits-title {
-	color: #2e2f42;
+	color: var(--dark-color);
 	font-size: 20px;
 	font-weight: 500;
 	line-height: 1.2;
-	letter-spacing: 0.4px;
+	letter-spacing: 0.02em;
+	margin-bottom: 8px;
 }
 
 .benefits-text {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.5;
-	letter-spacing: 0.32px;
+	letter-spacing: 0.02em;
 }
 
 /* team section */
 
 .team-section {
-	background-color: #f4f4fd;
+	background-color: var(--light-background-color);
 }
 
 .team-title {
-	color: #2e2f42;
+	color: var(--dark-color);
 	text-align: center;
 	font-size: 36px;
 	font-weight: 700;
 	line-height: 1.11;
-	letter-spacing: 0.72px;
+	letter-spacing: 0.02em;
 	text-transform: capitalize;
+	padding-top: 120px;
+	margin-bottom: 72px;
+}
+
+.team-list {
+	display: flex;
+	gap: 24px;
+	padding-bottom: 120px;
 }
 
 .team-card {
-	background-color: #ffffff;
+	background-color: var(--white-background-color);
+	width: calc((100%-24px) / 3);
 }
 
 .person-name {
-	color: #2e2f42;
+	color: var(--dark-color);
 	font-size: 20px;
 	font-weight: 500;
 	line-height: 1.2;
-	letter-spacing: 0.4px;
+	letter-spacing: 0.02em;
+	text-align: center;
+	margin-top: 32px;
+	margin-bottom: 8px;
 }
 
 .person-position {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.5;
-	letter-spacing: 0.32px;
+	letter-spacing: 0.02em;
+	text-align: center;
+	margin-bottom: 24px;
 }
 
 /* portfolio section */
 
+.portfolio-section {
+	margin-top: 120px;
+	padding-bottom: 120px;
+}
+
+.portfolio-list {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 24px;
+	row-gap: 48px;
+}
+
+.portfolio-card {
+	border: 1px solid var(--cornflower);
+}
+
 .portfolio-title {
-	color: #2e2f42;
+	color: var(--dark-color);
 	text-align: center;
 	font-size: 36px;
 	font-weight: 700;
 	line-height: 1.11;
-	letter-spacing: 0.72px;
+	letter-spacing: 0.02em;
 	text-transform: capitalize;
+	margin-bottom: 72px;
 }
 
 .service-name {
-	color: #2e2f42;
+	color: var(--dark-color);
 	font-size: 20px;
 	font-weight: 500;
 	line-height: 1.2;
-	letter-spacing: 0.4px;
+	letter-spacing: 0.02em;
+	margin-top: 32px;
+	margin-bottom: 8px;
+	margin-left: 16px;
 }
 
 .service-type {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.5;
-	letter-spacing: 0.32px;
+	letter-spacing: 0.02em;
+	margin-bottom: 32px;
+	margin-left: 16px;
 }
 
 /* footer */
 
 .footer {
-	background-color: #2e2f42;
+	background-color: var(--dark-color);
+	width: 1440px;
+	height: 312px;
+}
+
+.item-container {
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+	width: 264px;
+	height: 112px;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 .footer-logo {
-	color: #4d5ae5;
+	color: var(--primary-brand-color);
 	font-family: 'Raleway', sans-serif;
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 1.17;
-	letter-spacing: 0.54px;
+	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	text-decoration: none;
+	margin-bottom: 16px;
 }
 
 .accent-footer {
-	color: #f4f4fd;
+	color: var(--white-background-color);
 }
 
 .footer-text {
-	color: #f4f4fd;
+	color: var(--white-background-color);
 	font-size: 16px;
 	line-height: 1.5;
-	letter-spacing: 0.32px;
+	letter-spacing: 0.02em;
 }
