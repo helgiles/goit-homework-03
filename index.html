@@ -22,33 +22,31 @@
 	<body>
 		<!-- header -->
 		<header>
-			<div class="container">
-				<div class="header">
-					<nav class="nav">
-						<a class="header-logo" href="./index.html"
-							>Web<span class="accent-header">Studio</span></a
-						>
-						<ul>
-							<li><a class="header-link" href="./index.html">Studio</a></li>
-							<li><a class="header-link" href="">Portfolio</a></li>
-							<li><a class="header-link" href="">Contacts</a></li>
-						</ul>
-					</nav>
-					<address class="address">
-						<ul>
-							<li>
-								<a class="contacts-link" href="mailto:info@devstudio.com"
-									>info@devstudio.com</a
-								>
-							</li>
-							<li>
-								<a class="contacts-link" href="tel:+110001111111"
-									>+11 (000) 111-11-11</a
-								>
-							</li>
-						</ul>
-					</address>
-				</div>
+			<div class="container header">
+				<nav class="nav">
+					<a class="header-logo" href="./index.html"
+						>Web<span class="accent-header">Studio</span></a
+					>
+					<ul class="menu">
+						<li><a class="header-link" href="./index.html">Studio</a></li>
+						<li><a class="header-link" href="">Portfolio</a></li>
+						<li><a class="header-link" href="">Contacts</a></li>
+					</ul>
+				</nav>
+				<address class="address">
+					<ul class="address-list">
+						<li>
+							<a class="contacts-link" href="mailto:info@devstudio.com"
+								>info@devstudio.com</a
+							>
+						</li>
+						<li>
+							<a class="contacts-link" href="tel:+110001111111"
+								>+11 (000) 111-11-11</a
+							>
+						</li>
+					</ul>
+				</address>
 			</div>
 		</header>
 		<main>
@@ -64,28 +62,28 @@
 				<div class="container">
 					<h2 class="visually-hidden">Benefits</h2>
 					<ul class="benefits-list">
-						<li>
+						<li class="benefits-item">
 							<h3 class="benefits-title">Strategy</h3>
 							<p class="benefits-text">
 								Our goal is to identify the business problem to walk away with
 								the perfect and creative solution.
 							</p>
 						</li>
-						<li>
+						<li class="benefits-item">
 							<h3 class="benefits-title">Punctuality</h3>
 							<p class="benefits-text">
 								Bring the key message to the brand's audience for the best price
 								within the shortest possible time.
 							</p>
 						</li>
-						<li>
+						<li class="benefits-item">
 							<h3 class="benefits-title">Diligence</h3>
 							<p class="benefits-text">
 								Research and confirm brands that present the strongest digital
 								growth opportunities and minimize risk.
 							</p>
 						</li>
-						<li>
+						<li class="benefits-item">
 							<h3 class="benefits-title">Technologies</h3>
 							<p class="benefits-text">
 								Design practice focused on digital experiences. We bring forth a
@@ -107,8 +105,10 @@
 								width="264"
 								height="260"
 							/>
-							<h3 class="person-name">Mark Guerrero</h3>
-							<p class="person-position">Product Designer</p>
+							<div class="person-data">
+								<h3 class="person-name">Mark Guerrero</h3>
+								<p class="person-position">Product Designer</p>
+							</div>
 						</li>
 						<li class="team-card">
 							<img
@@ -117,8 +117,10 @@
 								width="264"
 								height="260"
 							/>
-							<h3 class="person-name">Tom Ford</h3>
-							<p class="person-position">Frontend Developer</p>
+							<div class="person-data">
+								<h3 class="person-name">Tom Ford</h3>
+								<p class="person-position">Frontend Developer</p>
+							</div>
 						</li>
 						<li class="team-card">
 							<img
@@ -127,8 +129,10 @@
 								width="264"
 								height="260"
 							/>
-							<h3 class="person-name">Camila Garcia</h3>
-							<p class="person-position">Marketing</p>
+							<div class="person-data">
+								<h3 class="person-name">Camila Garcia</h3>
+								<p class="person-position">Marketing</p>
+							</div>
 						</li>
 						<li class="team-card">
 							<img
@@ -137,8 +141,10 @@
 								width="264"
 								height="260"
 							/>
-							<h3 class="person-name">Daniel Wilson</h3>
-							<p class="person-position">UI Designer</p>
+							<div class="person-data">
+								<h3 class="person-name">Daniel Wilson</h3>
+								<p class="person-position">UI Designer</p>
+							</div>
 						</li>
 					</ul>
 				</div>
@@ -155,8 +161,10 @@
 								width="360"
 								height="300"
 							/>
-							<h3 class="service-name">Banking App</h3>
-							<p class="service-type">App</p>
+							<div class="service-data">
+								<h3 class="service-name">Banking App</h3>
+								<p class="service-type">App</p>
+							</div>
 						</li>
 						<li class="portfolio-card">
 							<img
@@ -165,8 +173,10 @@
 								width="360"
 								height="300"
 							/>
-							<h3 class="service-name">Cashless Payment</h3>
-							<p class="service-type">Marketing</p>
+							<div class="service-data">
+								<h3 class="service-name">Cashless Payment</h3>
+								<p class="service-type">Marketing</p>
+							</div>
 						</li>
 						<li class="portfolio-card">
 							<img
@@ -175,8 +185,10 @@
 								width="360"
 								height="300"
 							/>
-							<h3 class="service-name">Meditation App</h3>
-							<p class="service-type">App</p>
+							<div class="service-data">
+								<h3 class="service-name">Meditation App</h3>
+								<p class="service-type">App</p>
+							</div>
 						</li>
 						<li class="portfolio-card">
 							<img
@@ -185,8 +197,10 @@
 								width="360"
 								height="300"
 							/>
-							<h3 class="service-name">Taxi Service</h3>
-							<p class="service-type">Marketing</p>
+							<div class="service-data">
+								<h3 class="service-name">Taxi Service</h3>
+								<p class="service-type">Marketing</p>
+							</div>
 						</li>
 						<li class="portfolio-card">
 							<img
@@ -195,8 +209,10 @@
 								width="360"
 								height="300"
 							/>
-							<h3 class="service-name">Screen Illustrations</h3>
-							<p class="service-type">Design</p>
+							<div class="service-data">
+								<h3 class="service-name">Screen Illustrations</h3>
+								<p class="service-type">Design</p>
+							</div>
 						</li>
 						<li class="portfolio-card">
 							<img
@@ -205,8 +221,10 @@
 								width="360"
 								height="300"
 							/>
-							<h3 class="service-name">Online Courses</h3>
-							<p class="service-type">Marketing</p>
+							<div class="service-data">
+								<h3 class="service-name">Online Courses</h3>
+								<p class="service-type">Marketing</p>
+							</div>
 						</li>
 					</ul>
 				</div>
@@ -214,7 +232,7 @@
 		</main>
 		<!-- footer -->
 		<footer class="footer">
-			<div class="container item-container">
+			<div class="container footer-container">
 				<a class="footer-logo" href="./index.html">
 					Web<span class="accent-footer">Studio</span></a
 				>
