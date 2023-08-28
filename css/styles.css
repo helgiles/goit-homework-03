@@ -330,9 +330,9 @@ img {
 }
 
 .footer-container {
-	display: flex;
+	/* display: flex;
 	flex-direction: column;
-	flex-shrink: 0;
+	flex-shrink: 0; */
 	width: 264px;
 	height: 112px;
 	margin-right: 1020px;
