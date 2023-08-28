@@ -47,11 +47,14 @@ img {
 /* header */
 
 .header {
+	border-bottom: 1px solid var(--cornflower);
+}
+
+.header-container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	pading: 24px auto;
-	border-bottom: 1px solid var(--cornflower);
+	margin: 24px auto;
 }
 
 .nav {
