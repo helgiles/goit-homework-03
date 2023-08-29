@@ -48,13 +48,14 @@ img {
 
 .header {
 	border-bottom: 1px solid var(--cornflower);
+	padding-top: 24px;
+	padding-bottom: 24px;
 }
 
 .header-container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 24px auto;
 }
 
 .nav {
@@ -330,9 +331,6 @@ img {
 }
 
 .footer-container {
-	/* display: flex;
-	flex-direction: column;
-	flex-shrink: 0; */
 	width: 264px;
 	height: 112px;
 	margin-right: 1020px;
