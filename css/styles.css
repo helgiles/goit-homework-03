@@ -13,8 +13,6 @@ body {
 	font-weight: 400;
 	color: var(--text-color);
 	background-color: var(--white-background-color);
-	width: 1440px;
-	height: 3300px;
 }
 
 h1,
@@ -126,8 +124,6 @@ img {
 
 .hero-section {
 	background-color: var(--dark-color);
-	width: 1440px;
-	height: 600px;
 	flex-shrink: 0;
 	display: flex;
 	flex-direction: column;
@@ -324,8 +320,6 @@ img {
 
 .footer {
 	background-color: var(--dark-color);
-	width: 1440px;
-	height: 312px;
 	padding-top: 100px;
 	padding-bottom: 100px;
 }
